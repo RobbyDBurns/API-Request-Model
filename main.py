@@ -14,3 +14,8 @@ def create_item(item: str):
         return items
     items.append(item)
     return items
+
+@app.get("/items/{item_id}")
+def get_item(item_id: int) -> str:
+    item - items[item_id]
+    return item
